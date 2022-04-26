@@ -6,7 +6,7 @@ const Sidebar = (props) => {
     <div className={props.sidebar}>
       <FaTimes
         className="close"
-        onClick={() => props.setSidebar("sidebar-container-passive")}
+        onClick={props.setSidebar}
       />
       <ul className="sidebar-list-container">
         <li className="sidebar-list-container-list">HOME</li>
