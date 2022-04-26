@@ -71,11 +71,13 @@ h1 {
 
 .sidebar-container-passive {
   @include sideBarToggler();
+
   transform: translateX(-100%);
 }
 
 .sidebar-container-active {
   transform: translateX(0);
+
   @include sideBarToggler();
 }
 
