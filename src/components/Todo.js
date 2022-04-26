@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaPlus } from 'react-icons/fa';
 import Sidebar from "./SideBar";
-import List from "./CreateList";
 
 const Todo = () => {
     const [sidebar, setSidebar] = useState('sidebar-container-passive');
@@ -20,7 +19,6 @@ const Todo = () => {
                 <FaPlus className="plus"/>
             </form>
             <ul>
-                <List title='samo'/>
             </ul>
         </div>
     );
