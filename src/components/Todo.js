@@ -11,6 +11,7 @@ class Todo extends React.Component {
         }
         this.sideBarToggler = this.sideBarToggler.bind(this)
         this.dataHandler = this.dataHandler.bind(this)
+        this.sendToLocalStorage = this.sendToLocalStorage.bind(this)
     }
     sideBarToggler(){
         if(this.state.class === 'sidebar-container-passive'){
@@ -20,10 +21,15 @@ class Todo extends React.Component {
         }
     }
 
+    sendToLocalStorage(){
+        JSON.stringify(localStorage.setItem('list', this.state.title))
+    }
+
     dataHandler(e){
         if(e.key === 'Enter'){
             e.preventDefault();
             this.setState({title: e.target.value})
+            this.sendToLocalStorage();
         }
     }
     
