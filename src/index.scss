@@ -39,6 +39,7 @@ h1 {
   border: 1px solid #d2d2d2;
   border-radius: 25px;
   outline: none;
+
   input {
     outline: none;
     border: none;
@@ -47,10 +48,12 @@ h1 {
     font-size: 18px;
   }
 }
+
 .hamburger {
   font-size: 35px;
   align-self: flex-start;
   justify-self: flex-start;
+
   &:hover {
     cursor: pointer;
   }
@@ -60,6 +63,7 @@ h1 {
   align-self: center;
   justify-self: flex-end;
   padding-right: 20px;
+
   &:hover {
     cursor: pointer;
   }
@@ -78,6 +82,7 @@ h1 {
 .close {
   font-size: 40px;
   margin: 30px;
+
   &:hover {
     cursor: pointer;
   }
