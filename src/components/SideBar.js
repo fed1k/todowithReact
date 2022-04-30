@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTimes } from "react-icons/fa";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 const Sidebar = (props) => {
   return (
     <div className={props.sidebar}>
@@ -9,8 +10,8 @@ const Sidebar = (props) => {
         onClick={props.setSidebar}
       />
       <ul className="sidebar-list-container">
-        <li className="sidebar-list-container-list">HOME</li>
-        <li className="sidebar-list-container-list">ABOUT</li>
+        <li className="sidebar-list-container-list"><Link>HOME</Link></li>
+        <li className="sidebar-list-container-list"><Link>ABOUT</Link></li>
       </ul>
     </div>
   );
